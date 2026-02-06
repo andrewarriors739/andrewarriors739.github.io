@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1D428A 0%, #FFC72C 20%, #1D428A 40%, #FFC72C 60%, #1D428A 100%);
+        }
+
+        #header-section {
+            background: black;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        hr {
+            flex-shrink: 0;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            border: none;
+            margin: 0;
+        }
+
+        nav {
+            background: #1D428A;
+            padding: 25px 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+
+
+
+        #flex-container {
+            background: #FFC72C;
+            padding: 40px 20px;
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .person {
+            text-align: center;
+        }
+
+        .person img {
+            display: block;
+            margin: 0 auto 8px auto;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            margin: 0;
+            color: #1D428A;
+            font-weight: bold;
+        }
+
+        #main-content {
+            background: #1D428A;
+            padding: 30px 20px;
+            text-align: center;
+            flex-shrink: 0;
+            color: white;
+        }
+
+        blockquote {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        #page-footer {
+            background: black;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        #page-footer hr {
+            height: 2px;
+            background: white;
+            margin: 0 0 15px 0;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease;
+        }
+
+        .disclaimer {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        nav a {
+            display: inline-block;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a.active {
+            text-decoration: underline;
+            font-size: 1.1em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        #page-footer .disclaimer {
+            color: #FFC72C;
+            font-weight: bold;
+        }
+
+        #page-footer img {
+            filter: hue-rotate(200deg) saturate(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header-section">
+        <h1>Team 3</h1>
+    </div>
+    <hr>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <hr>
+
+    <div id="flex-container">
+        <div class="person">
+            <img src="img/andre.jpeg" alt="Andre">
+            <figcaption>Andre Gutierrez</figcaption>
+        </div>
+        <div class="person">
+            <img src="img/charles2.jpg" alt="Charles">
+            <figcaption>Charles Delahousse</figcaption>
+        </div>
+        <div class="person">
+            <img src="img/anthony.jpg" alt="Anthony">
+            <figcaption>Anthony Ramirez</figcaption>
+        </div>
+        <div class="person">
+            <img src="img/emiliano.jpg" alt="Emiliano">
+            <figcaption>Emiliano Gomez</figcaption>
+        </div>
+    </div>
+    <hr>
+
+    <main id="main-content">
+        <p>Hi! We are computer science students and a team for CST-336.</p>
+        <blockquote>
+            <em>"With great power, comes great responsibility."</em><br>
+            <cite>– Uncle Ben</cite>
+        </blockquote>
+    </main>
+    <hr>
+
+    <footer id="page-footer">
+        <hr>
+        <p class="disclaimer">
+            CST336 Internet Programming. 2026 © Gutierrez, Delahousse, Ramirez, Gomez<br>
+            <strong>Disclaimer:</strong> The information in this webpage is fictitious.<br>
+            It is used for academic purposes only.
+        </p>
+        <img src="img/csumb-logo.png" width="150" height="75" alt="CSUMB Logo"
+            style="filter: brightness(1.2); opacity: 0.9;">
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1D428A 0%, #FFC72C 20%, #1D428A 40%, #FFC72C 60%, #1D428A 100%);
+        }
+
+        #header-section {
+            background: black;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        hr {
+            flex-shrink: 0;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            border: none;
+            margin: 0;
+        }
+
+        nav {
+            background: #1D428A;
+            padding: 25px 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+
+
+
+        #main-content {
+            background: #FFC72C;
+            padding: 40px 20px;
+            flex: 1;
+        }
+
+        #page-footer {
+            background: black;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        #page-footer hr {
+            height: 2px;
+            background: white;
+            margin: 0 0 15px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            background: rgba(29, 66, 138, 0.9);
+            color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        th {
+            background: rgba(29, 66, 138, 0.8);
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        li {
+            background: rgba(29, 66, 138, 0.9);
+            color: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .disclaimer {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        nav a {
+            display: inline-block;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a.active {
+            text-decoration: underline;
+            font-size: 1.1em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        #page-footer .disclaimer {
+            color: #FFC72C;
+            font-weight: bold;
+        }
+
+        #page-footer img {
+            filter: hue-rotate(200deg) saturate(1.2);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="header-section">
+        <h1>About Us</h1>
+    </div>
+    <hr>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <hr>
+
+    <main id="main-content">
+        <h2 style="color: #1D428A; text-align: center;">Programming Language Years Experience</h2>
+        <table>
+            <tr>
+                <th>Language</th>
+                <th>Years</th>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>0</td>
+            </tr>
+        </table>
+
+        <h4 style="color: #1D428A; text-align: center;">Our Common Hobbies</h4>
+        <ul>
+            <li>Video Games: We all enjoy playing FPS video games.</li>
+            <li>Music: We enjoy rap music</li>
+            <li>Programming: We all enjoy programming.</li>
+        </ul>
+    </main>
+
+    <hr>
+    <footer id="page-footer">
+        <hr>
+        <p class="disclaimer">
+            CST336 Internet Programming. 2026 © Gutierrez, Delahousse, Ramirez, Gomez<br>
+            <strong>Disclaimer:</strong> The information in this webpage is fictitious.<br>
+            It is used for academic purposes only.
+        </p>
+        <img src="img/csumb-logo.png" width="150" height="75" alt="CSUMB Logo" style="filter: brightness(1.2); opacity: 0.9;">
+    </footer>
+</body>
+
+</html>
